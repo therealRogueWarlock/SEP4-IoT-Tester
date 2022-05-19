@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 #include "GoogleTestDemo/VIAFreeRTOSTest/FreeRTOS_FFF_MocksDeclaration.h"
-//DEFINE_FFF_GLOBALS
+
 
 extern "C" {
 #include "temp_hum_sensor.h"

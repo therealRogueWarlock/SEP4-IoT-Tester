@@ -33,7 +33,7 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Frederik\source\repos\SEP4-IoT-Tester\SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;.;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\sensors;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\drivers;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Sander\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\sensors;C:\Users\Sander\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\drivers;C:\Users\Sander\source\repos\SEP4-IoT-Tester\SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;.;$(IncludePath)</IncludePath>
     <SourcePath>$(VC_SourcePath);</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -49,6 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ATMEGA_FreeRTOS.h" />
+    <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\event_groups.h" />
+    <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS.h" />
+    <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS_FFF_MocksDeclaration.h" />
+    <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\message_buffer.h" />
+    <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\queue.h" />
+    <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\semphr.h" />
+    <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\task.h" />
+    <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\timers.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
