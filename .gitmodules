@@ -1,6 +1,7 @@
 [submodule "ProductionCode/SEP4-IoT"]
 	path = ProductionCode/SEP4-IoT
-	url = https://github.com/marker99/SEP4-IoT.git
+	url = https://github.com/marker99/SEP4-IoT.get
+	branch = testBranch
 [submodule "SEP4-IoT-TesterProject/fff"]
 	path = SEP4-IoT-TesterProject/fff
 	url = https://github.com/meekrosoft/fff
