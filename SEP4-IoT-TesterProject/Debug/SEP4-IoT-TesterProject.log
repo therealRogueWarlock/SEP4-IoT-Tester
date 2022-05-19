@@ -1,5 +1,2 @@
-﻿  TempHumSensorTest.cpp
-temp_hum_sensor.obj : error LNK2019: unresolved external symbol _xTaskCreate referenced in function _temp_hum_sensor_initialize
-TempHumSensorTest.obj : error LNK2019: unresolved external symbol "void __cdecl xTaskCreate_reset(void)" (?xTaskCreate_reset@@YAXXZ) referenced in function "protected: virtual void __thiscall TempHumSensorTest::SetUp(void)" (?SetUp@TempHumSensorTest@@MAEXXZ)
-TempHumSensorTest.obj : error LNK2019: unresolved external symbol "void __cdecl vTaskDelay_reset(void)" (?vTaskDelay_reset@@YAXXZ) referenced in function "protected: virtual void __thiscall TempHumSensorTest::SetUp(void)" (?SetUp@TempHumSensorTest@@MAEXXZ)
-C:\Users\Sander\source\repos\SEP4-IoT-Tester\Debug\SEP4-IoT-TesterProject.exe : fatal error LNK1120: 3 unresolved externals
+﻿  FreeRTOS_FFF_MocksDefinitions.cpp
+  SEP4-IoT-TesterProject.vcxproj -> C:\Users\Frederik\Source\Repos\SEP4-IoT-Tester\Debug\SEP4-IoT-TesterProject.exe
