@@ -40,9 +40,11 @@
     <IncludePath>.;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\drivers;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\sensors;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\ProductionCode\SEP4-IoT\sensors\co2_sensor.c" />
     <ClCompile Include="..\ProductionCode\SEP4-IoT\sensors\temp_hum_sensor.c" />
     <ClCompile Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS_FFF_MocksDefinitions.cpp" />
-    <ClCompile Include="TempHumSensorTest.cpp" />
+    <ClCompile Include="SensorTest\CO2SensorTest.cpp" />
+    <ClCompile Include="SensorTest\TempHumSensorTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

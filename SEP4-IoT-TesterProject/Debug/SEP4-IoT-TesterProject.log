@@ -1,5 +1,2 @@
-﻿  temp_hum_sensor.c
-  FreeRTOS_FFF_MocksDefinitions.cpp
-  TempHumSensorTest.cpp
-  Generating Code...
+﻿  TempHumSensorTest.cpp
   SEP4-IoT-TesterProject.vcxproj -> C:\Users\Sander\source\repos\SEP4-IoT-Tester\Debug\SEP4-IoT-TesterProject.exe
