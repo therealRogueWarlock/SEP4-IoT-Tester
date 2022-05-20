@@ -4,6 +4,7 @@
 
 extern "C" {
 #include "temp_hum_sensor.h"
+
 #include "hih8120.h"
 #include "FreeRTOS.h"
 #include "task.h"
@@ -17,13 +18,14 @@ FAKE_VALUE_FUNC(uint16_t, hih8120_getHumidityPercent_x10);
 FAKE_VALUE_FUNC(int16_t, hih8120_getTemperature_x10);
 FAKE_VALUE_FUNC(bool, hih8120_isReady);
 FAKE_VALUE_FUNC(hih8120_driverReturnCode_t, hih8120_measure);
-FAKE_VOID_FUNC(temp_hum_sensor_wentWRONG);
 
 class TempHumSensorTest : public ::testing::Test {
 protected:
 	void SetUp()override {
 		RESET_FAKE(xTaskCreate);
 		RESET_FAKE(vTaskDelay);
+		RESET_FAKE(xEventGroupCreate);
+
 
 		RESET_FAKE(hih8120_initialise);
 		RESET_FAKE(hih8120_wakeup);
@@ -32,8 +34,6 @@ protected:
 		RESET_FAKE(hih8120_isReady);
 		RESET_FAKE(hih8120_measure);
 
-		RESET_FAKE(temp_hum_sensor_wentWRONG);
-		
 		FFF_RESET_HISTORY();
 	}
 	void TearDown()override {}
@@ -64,7 +64,6 @@ TEST_F(TempHumSensorTest, temp_hum_sensor_task_initCall) {
 TEST_F(TempHumSensorTest, temp_hum_sensor_task_runCall) {
 	temp_hum_sensor_task_run();
 	
-
 
 	//Assert
 	EXPECT_EQ(1, hih8120_wakeup_fake.call_count);

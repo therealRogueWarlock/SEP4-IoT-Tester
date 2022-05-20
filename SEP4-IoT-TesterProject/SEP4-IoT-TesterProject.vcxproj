@@ -33,15 +33,15 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Sander\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\sensors;C:\Users\Sander\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\drivers;C:\Users\Sander\source\repos\SEP4-IoT-Tester\SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;.;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)ProductionCode\IoT-ProductionCode\sensors;$(SolutionDir)SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;$(SolutionDir)SEP4-IoT-TesterProject\FakeDrivers;$(SolutionDir)SEP4-IoT-TesterProject\fff;.;$(IncludePath)</IncludePath>
     <SourcePath>$(VC_SourcePath);</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>.;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\drivers;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\sensors;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="..\ProductionCode\SEP4-IoT\sensors\co2_sensor.c" />
-    <ClCompile Include="..\ProductionCode\SEP4-IoT\sensors\temp_hum_sensor.c" />
+    <ClCompile Include="..\ProductionCode\IoT-ProductionCode\sensors\co2_sensor.c" />
+    <ClCompile Include="..\ProductionCode\IoT-ProductionCode\sensors\temp_hum_sensor.c" />
     <ClCompile Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS_FFF_MocksDefinitions.cpp" />
     <ClCompile Include="SensorTest\CO2SensorTest.cpp" />
     <ClCompile Include="SensorTest\TempHumSensorTest.cpp" />
@@ -50,7 +50,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ATMEGA_FreeRTOS.h" />
+    <ClInclude Include="FakeDrivers\ATMEGA_FreeRTOS.h" />
+    <ClInclude Include="FakeDrivers\hih8120.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\event_groups.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS_FFF_MocksDeclaration.h" />
@@ -59,6 +60,7 @@
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\semphr.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\task.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\timers.h" />
+    <ClInclude Include="FakeDrivers\mh_z19.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

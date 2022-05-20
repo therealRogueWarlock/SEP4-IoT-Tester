@@ -1,2 +1,16 @@
-﻿  TempHumSensorTest.cpp
-  SEP4-IoT-TesterProject.vcxproj -> C:\Users\Sander\source\repos\SEP4-IoT-Tester\Debug\SEP4-IoT-TesterProject.exe
+﻿  co2_sensor.c
+  temp_hum_sensor.c
+  Generating Code...
+  FreeRTOS_FFF_MocksDefinitions.cpp
+  CO2SensorTest.cpp
+  TempHumSensorTest.cpp
+  Generating Code...
+co2_sensor.obj : error LNK2019: unresolved external symbol _mh_z19_initialise referenced in function _co2_sensor_initialize
+CO2SensorTest.obj : error LNK2001: unresolved external symbol _mh_z19_initialise
+    Hint on symbols that are defined and could potentially match:
+      "void __cdecl mh_z19_initialise(unsigned short)" (?mh_z19_initialise@@YAXG@Z)
+co2_sensor.obj : error LNK2019: unresolved external symbol _mh_z19_injectCallBack referenced in function _co2_sensor_initialize
+CO2SensorTest.obj : error LNK2001: unresolved external symbol _mh_z19_injectCallBack
+    Hint on symbols that are defined and could potentially match:
+      "void __cdecl mh_z19_injectCallBack(void *)" (?mh_z19_injectCallBack@@YAXPAX@Z)
+C:\Users\sande\Documents\GitHub\SEP4-IoT-Tester\Debug\SEP4-IoT-TesterProject.exe : fatal error LNK1120: 2 unresolved externals
