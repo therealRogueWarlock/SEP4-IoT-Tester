@@ -1,10 +1,10 @@
-[submodule "ProductionCode/SEP4-IoT"]
-	path = ProductionCode/SEP4-IoT
-	url = https://github.com/marker99/SEP4-IoT.get
-	branch = testBranch
 [submodule "SEP4-IoT-TesterProject/fff"]
 	path = SEP4-IoT-TesterProject/fff
 	url = https://github.com/meekrosoft/fff
 [submodule "SEP4-IoT-TesterProject/GoogleTestDemo"]
 	path = SEP4-IoT-TesterProject/GoogleTestDemo
 	url = https://github.com/ihavn/GoogleTestDemo
+[submodule "ProductionCode/IoT-ProductionCode"]
+	path = ProductionCode/IoT-ProductionCode
+	url = https://github.com/marker99/SEP4-IoT.git
+	branch = testBranch
