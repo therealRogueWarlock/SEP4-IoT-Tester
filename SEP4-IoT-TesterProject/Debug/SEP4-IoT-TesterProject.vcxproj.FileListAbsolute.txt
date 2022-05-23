@@ -1,2 +1,0 @@
-C:\Users\Frederik\source\repos\SEP4-IoT-Tester\SEP4-IoT-TesterProject\Debug\SEP4-IoT-TesterProject.vcxproj.CopyComplete
-C:\Users\Sander\source\repos\SEP4-IoT-Tester\SEP4-IoT-TesterProject\Debug\SEP4-IoT-TesterProject.vcxproj.CopyComplete
