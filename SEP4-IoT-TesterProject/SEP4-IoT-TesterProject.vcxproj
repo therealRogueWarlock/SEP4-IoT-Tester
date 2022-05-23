@@ -37,7 +37,7 @@
     <SourcePath>$(VC_SourcePath);</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>.;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\drivers;C:\Users\Frederik\source\repos\SEP4-IoT-Tester\ProductionCode\SEP4-IoT\sensors;$(IncludePath)</IncludePath>
+    <IncludePath>.;$(SolutionDir)SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;$(SolutionDir)ProductionCode\IoT-ProductionCode\sensors;$(SolutionDir)SEP4-IoT-TesterProject\FakeDrivers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="..\ProductionCode\IoT-ProductionCode\sensors\co2_sensor.c" />
