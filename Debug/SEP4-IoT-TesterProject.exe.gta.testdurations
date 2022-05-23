@@ -9,5 +9,7 @@
     <TestDuration Test="TempHumSensorTest.temp_hum_getTemperatureCall" Duration="1" />
     <TestDuration Test="TempHumSensorTest.temp_hum_getHumidityCall" Duration="1" />
     <TestDuration Test="TempHumSensorTest.temp_hum_sensor_task_runCallStatusNotOk" Duration="1" />
+    <TestDuration Test="CO2SensorTest.Co2_Sensor_initilizeCall" Duration="1" />
+    <TestDuration Test="CO2SensorTest._co2_sensor_task_init" Duration="1" />
   </TestDurations>
 </GtaTestDurations>

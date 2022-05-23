@@ -31,7 +31,7 @@ protected:
 };
 
 
-TEST_F(CO2SensorTest, Co2_Sensor_initilizeCall) {
+TEST_F(CO2SensorTest, co2_Sensor_initilizeCall) {
 	//Arrange
 	EventGroupHandle_t readyGroup = xEventGroupCreate();
 	EventGroupHandle_t startGroup = xEventGroupCreate();
@@ -39,9 +39,25 @@ TEST_F(CO2SensorTest, Co2_Sensor_initilizeCall) {
 	//Act
 	co2_sensor_initialize(1, readyGroup, startGroup);
 
-
 	//Assert
 	EXPECT_EQ(1, mh_z19_injectCallBack_fake.call_count);
 	EXPECT_EQ(1, mh_z19_initialise_fake.call_count);
 	EXPECT_EQ(1, xTaskCreate_fake.call_count);
+}
+
+
+TEST_F(CO2SensorTest, _co2_sensor_task_init) {
+	//Arrange
+	//Act
+	//Assert
+
+	FAIL();
+}
+
+TEST_F(CO2SensorTest, _co2_sensor_task_run) {
+	//Arrange
+	//Act
+	//Assert
+
+	FAIL();
 }

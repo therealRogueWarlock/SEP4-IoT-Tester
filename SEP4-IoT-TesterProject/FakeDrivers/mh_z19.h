@@ -9,6 +9,6 @@ typedef enum
 } serial_comPort_t;
 
 
-void mh_z19_initialise();
+void mh_z19_initialise(uint16_t);
 
-void mh_z19_injectCallBack();
+void mh_z19_injectCallBack(void*);
