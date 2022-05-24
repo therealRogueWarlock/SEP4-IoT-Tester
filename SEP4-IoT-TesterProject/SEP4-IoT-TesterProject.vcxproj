@@ -37,11 +37,13 @@
     <SourcePath>$(VC_SourcePath);</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>.;$(SolutionDir)SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;$(SolutionDir)ProductionCode\IoT-ProductionCode\sensors;$(SolutionDir)SEP4-IoT-TesterProject\FakeDrivers;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)SEP4-IoT-TesterProject\FakeHeaders;.;$(SolutionDir)SEP4-IoT-TesterProject\GoogleTestDemo\VIAFreeRTOSTest;$(SolutionDir)ProductionCode\IoT-ProductionCode;$(SolutionDir)ProductionCode\IoT-ProductionCode\sensors;$(SolutionDir)SEP4-IoT-TesterProject\FakeDrivers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\ProductionCode\IoT-ProductionCode\application.c" />
     <ClCompile Include="..\ProductionCode\IoT-ProductionCode\sensors\co2_sensor.c" />
     <ClCompile Include="..\ProductionCode\IoT-ProductionCode\sensors\temp_hum_sensor.c" />
+    <ClCompile Include="generalTest\ApplicationTest.cpp" />
     <ClCompile Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS_FFF_MocksDefinitions.cpp" />
     <ClCompile Include="SensorTest\CO2SensorTest.cpp" />
     <ClCompile Include="SensorTest\TempHumSensorTest.cpp" />
@@ -56,6 +58,7 @@
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS_FFF_MocksDeclaration.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\message_buffer.h" />
+    <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\portable.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\queue.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\semphr.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\task.h" />

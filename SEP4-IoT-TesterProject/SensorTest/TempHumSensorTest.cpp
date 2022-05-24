@@ -25,6 +25,7 @@ protected:
 		RESET_FAKE(xTaskCreate);
 		RESET_FAKE(vTaskDelay);
 		RESET_FAKE(xEventGroupCreate);
+		RESET_FAKE(xTaskGetTickCount);
 
 
 		RESET_FAKE(hih8120_initialise);
@@ -58,10 +59,14 @@ TEST_F(TempHumSensorTest, temp_hum_initilizeCall) {
 
 TEST_F(TempHumSensorTest, temp_hum_sensor_task_initCall) {
 	temp_hum_sensor_task_init();
+	
 	FAIL();
 }
 
 TEST_F(TempHumSensorTest, temp_hum_sensor_task_runCall) {
+	//arange
+
+	//act
 	temp_hum_sensor_task_run();
 	
 
