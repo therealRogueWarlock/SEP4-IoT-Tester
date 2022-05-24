@@ -58,17 +58,18 @@ TEST_F(TempHumSensorTest, temp_hum_initilizeCall) {
 }
 
 TEST_F(TempHumSensorTest, temp_hum_sensor_task_initCall) {
+	//Arrange
+	//Act
 	temp_hum_sensor_task_init();
-	
+
+	//Assert
 	FAIL();
 }
 
 TEST_F(TempHumSensorTest, temp_hum_sensor_task_runCall) {
-	//arange
-
-	//act
+	//Arrange
+	//Act
 	temp_hum_sensor_task_run();
-	
 
 	//Assert
 	EXPECT_EQ(1, hih8120_wakeup_fake.call_count);
@@ -78,9 +79,10 @@ TEST_F(TempHumSensorTest, temp_hum_sensor_task_runCall) {
 
 
 TEST_F(TempHumSensorTest, temp_hum_sensor_task_runCallStatusNotOk) {
-	
+	//Arrange
 	hih8120_measure_fake.return_val = HIH8120_TWI_BUSY;
 
+	//Act
 	temp_hum_sensor_task_run();
 
 	
