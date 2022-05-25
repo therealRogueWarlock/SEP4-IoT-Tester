@@ -30,13 +30,11 @@ protected:
 		RESET_FAKE(pvPortMalloc);
 		RESET_FAKE(xTaskGetTickCount);
 
-
 		RESET_FAKE(hih8120_isReady);
 		RESET_FAKE(co2_sensor_getCO2);
 		RESET_FAKE(send_measurment);
 		RESET_FAKE(hih8120_getHumidityPercent_x10);
 		RESET_FAKE(hih8120_getTemperature_x10);
-
 
 		FFF_RESET_HISTORY();
 	}

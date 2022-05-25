@@ -55,6 +55,7 @@
   <ItemGroup>
     <ClInclude Include="FakeDrivers\ATMEGA_FreeRTOS.h" />
     <ClInclude Include="FakeDrivers\hih8120.h" />
+    <ClInclude Include="FakeDrivers\status_leds.h" />
     <ClInclude Include="FFF_Mocks\FFF_mocksDeclarations.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\event_groups.h" />
     <ClInclude Include="GoogleTestDemo\VIAFreeRTOSTest\FreeRTOS.h" />
