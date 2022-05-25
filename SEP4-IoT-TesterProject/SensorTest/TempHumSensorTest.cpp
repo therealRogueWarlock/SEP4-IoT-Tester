@@ -1,23 +1,17 @@
 #include "gtest/gtest.h"
 #include "GoogleTestDemo/VIAFreeRTOSTest/FreeRTOS_FFF_MocksDeclaration.h"
-
+#include "FFF_mocksDeclarations.h"
 
 extern "C" {
 #include "temp_hum_sensor.h"
 
-#include "hih8120.h"
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
 #include "event_groups.h"
 }
 
-FAKE_VALUE_FUNC(hih8120_driverReturnCode_t, hih8120_initialise);
-FAKE_VALUE_FUNC(hih8120_driverReturnCode_t, hih8120_wakeup);
-FAKE_VALUE_FUNC(uint16_t, hih8120_getHumidityPercent_x10);
-FAKE_VALUE_FUNC(int16_t, hih8120_getTemperature_x10);
-FAKE_VALUE_FUNC(bool, hih8120_isReady);
-FAKE_VALUE_FUNC(hih8120_driverReturnCode_t, hih8120_measure);
+
 
 class TempHumSensorTest : public ::testing::Test {
 protected:
@@ -90,6 +84,7 @@ TEST_F(TempHumSensorTest, temp_hum_sensor_task_runCallStatusNotOk) {
 	EXPECT_EQ(1, hih8120_wakeup_fake.call_count);
 	EXPECT_EQ(1, hih8120_measure_fake.call_count);
 	EXPECT_EQ(1, hih8120_isReady_fake.call_count);
+	EXPECT_EQ(false, hih8120_isReady());
 }
 
 

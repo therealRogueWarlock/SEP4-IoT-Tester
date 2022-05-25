@@ -4,6 +4,7 @@
 #ifndef HIH8120_H_
 #define HIH8120_H_
 #include <stdbool.h>
+#include "stdint.h"
 
 
 typedef enum hih8120_driverReturnCodes {
@@ -30,7 +31,7 @@ int16_t hih8120_getTemperature_x10(void);
 
 float hih8120_getHumidity(void);
 
-
 float hih8120_getTemperature(void);
+
 
 #endif /* HIH8120_H_ */
