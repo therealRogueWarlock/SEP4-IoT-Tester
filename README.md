@@ -5,4 +5,4 @@ This GitHub Repository is made for working with the [IoT Device](https://github.
 
 This acts as a Test Repository, allowing for a Test Environment, that being a Google Test Project, to work with the Production Code, whilst still keeping the actual Production Code in a separate GitHub
 
-This application was developped using Pair Programming between Sander ([Github Account](https://github.com/therealRogueWarlock)) and Frederik ([Github Account](https://github.com/marker99))
+This application was developped using Pair Programming between Sander ([therealRogueWarlock](https://github.com/therealRogueWarlock)) and Frederik ([marker99](https://github.com/marker99))
